@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <TextView
+            android:text="@string/em"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView1"
+            android:layout_width="136.0dp"
+            android:layout_height="match_parent"
+            android:gravity="right" />
+        <EditText
+            android:inputType="textEmailAddress"
+            android:id="@+id/mycorreo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp">
+        <TextView
+            android:text="@string/pw"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView2"
+            android:layout_width="122.5dp"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:gravity="right" />
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/mypass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <Button
+        android:text="@string/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

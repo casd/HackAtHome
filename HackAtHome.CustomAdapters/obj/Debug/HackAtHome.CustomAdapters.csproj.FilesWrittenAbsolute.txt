@@ -1,0 +1,14 @@
+/Users/carlos/Projects/HackAtHome/HackAtHome.CustomAdapters/obj/Debug/MonoAndroid,Version=v7.1.AssemblyAttribute.cs
+/Users/carlos/Projects/HackAtHome/HackAtHome.CustomAdapters/obj/Debug/HackAtHome.CustomAdapters.obj.Debug.__AndroidLibraryProjects__.zip
+/Users/carlos/Projects/HackAtHome/HackAtHome.CustomAdapters/bin/Debug/HackAtHome.CustomAdapters.pdb
+/Users/carlos/Projects/HackAtHome/HackAtHome.CustomAdapters/bin/Debug/HackAtHome.CustomAdapters.dll
+/Users/carlos/Projects/HackAtHome/HackAtHome.CustomAdapters/bin/Debug/HackAtHome.CustomAdapters.apk
+/Users/carlos/Projects/HackAtHome/HackAtHome.CustomAdapters/obj/Debug/android/bin/HackAtHome.CustomAdapters.apk
+/Users/carlos/Projects/HackAtHome/HackAtHome.CustomAdapters/obj/Debug/res/values/strings.xml
+/Users/carlos/Projects/HackAtHome/HackAtHome.CustomAdapters/obj/Debug/R.cs.flag
+/Users/carlos/Projects/HackAtHome/HackAtHome.CustomAdapters/bin/Debug/HackAtHome.CustomAdapters-Signed.apk
+/Users/carlos/Projects/HackAtHome/HackAtHome.CustomAdapters/obj/Debug/uploadflags.txt
+/Users/carlos/Projects/HackAtHome/HackAtHome.CustomAdapters/obj/Debug/HackAtHome.CustomAdapters.dll
+/Users/carlos/Projects/HackAtHome/HackAtHome.CustomAdapters/obj/Debug/HackAtHome.CustomAdapters.pdb
+/Users/carlos/Projects/HackAtHome/HackAtHome.CustomAdapters/bin/Debug/HackAtHome.Entities.dll
+/Users/carlos/Projects/HackAtHome/HackAtHome.CustomAdapters/bin/Debug/HackAtHome.Entities.pdb

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8AA146AF-AA17-4D54-A5DB-E7747223AF49}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HackAtHomeClient</RootNamespace>
+    <AssemblyName>HackAtHomeClient</AssemblyName>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidSupportedAbis>arm64-v8a;armeabi;armeabi-v7a;x86</AndroidSupportedAbis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="UrlImageViewHelper">
+      <HintPath>..\Components\urlimageviewhelper-1.0.4.2\lib\android\UrlImageViewHelper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EvidenciasActivity.cs" />
+    <Compile Include="DetalleEvidenciaActivity.cs" />
+    <Compile Include="Complex.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\icon.png" />
+    <AndroidResource Include="Resources\values-en\Strings.xml" />
+    <AndroidResource Include="Resources\values-pt\Strings.xml" />
+    <AndroidResource Include="Resources\layout-land\Main.axml" />
+    <AndroidResource Include="Resources\layout\Evidencias.axml" />
+    <AndroidResource Include="Resources\layout\EvidenciasItem.axml" />
+    <AndroidResource Include="Resources\layout-land\EvidenciasItem.axml" />
+    <AndroidResource Include="Resources\layout\DetalleEvidencia.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\mipmap-hdpi\" />
+    <Folder Include="Resources\mipmap-mdpi\" />
+    <Folder Include="Resources\mipmap-xhdpi\" />
+    <Folder Include="Resources\mipmap-xxhdpi\" />
+    <Folder Include="Resources\mipmap-xxxhdpi\" />
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Resources\values-pt\" />
+    <Folder Include="Resources\values-en\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HackAtHome.CustomAdapters\HackAtHome.CustomAdapters.csproj">
+      <Project>{29A347BF-DA2D-4E3C-886A-2485883E9197}</Project>
+      <Name>HackAtHome.CustomAdapters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HackAtHome.Entities\HackAtHome.Entities.csproj">
+      <Project>{02378702-6F7C-47F8-ACED-641B642C97FE}</Project>
+      <Name>HackAtHome.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HackAtHome.SAL\HackAtHome.SAL.csproj">
+      <Project>{112E4BD0-E1AA-486D-9EF7-29DAE72D6949}</Project>
+      <Name>HackAtHome.SAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="urlimageviewhelper">
+      <Version>1.0.4.2</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>
